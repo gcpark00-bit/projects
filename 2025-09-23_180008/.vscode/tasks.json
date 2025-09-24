@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create venv",
+      "type": "shell",
+      "command": "python3 -m venv .venv",
+      "problemMatcher": []
+    },
+    {
+      "label": "Install deps",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python -m pip install -r requirements.txt",
+      "problemMatcher": [],
+      "dependsOn": "Create venv"
+    }
+  ]
+}

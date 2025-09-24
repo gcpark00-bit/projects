@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run logger (args)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/multichannel_usb_logger.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--co2",
+        "/dev/tty.usbserial-0001",
+        "/dev/tty.usbserial-0002",
+        "/dev/tty.usbserial-0003",
+        "--thr",
+        "/dev/tty.usbserial-THR0",
+        "--interval",
+        "5",
+        "--outfile",
+        "usb_multi_log.csv"
+      ]
+    },
+    {
+      "name": "Run logger (config file)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/multichannel_usb_logger.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--config",
+        "${workspaceFolder}/ports_config.json"
+      ]
+    }
+  ]
+}

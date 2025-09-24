@@ -1,0 +1,48 @@
+{
+  "co2_ports": [
+    "/dev/cu.SLAB_USBtoUART",
+    "/dev/cu.SLAB_USBtoUART5",
+    "/dev/cu.SLAB_USBtoUART7",
+    "/dev/cu.SLAB_USBtoUART9"
+  ],
+  "interval": 1.0,
+  "interval_jitter": 0.2,
+  "median_window": 5,
+  "debug_raw": false,
+  "hysteresis_ppm": 5.0,
+  "min_dup_interval": 0.8,
+  "debug_logfile": "debug_raw.log",
+  "clear_offsets_on_start": true,
+  "test_setup": {
+    "composition": {
+      "PLA": 70.0,
+      "PBAT": 20.0,
+      "Inorganic": 5.0,
+      "Biochar": 5.0
+    },
+    "mass_g": 100.0,
+    "env": "soil",
+    "carbon_fraction": {
+      "PLA": 50.0,
+      "PBAT": 62.0,
+      "Biochar": 80.0
+    },
+    "co2_accounting": {
+      "mode": "closed",
+      "vol_or_flow": 10.0,
+      "baseline_ppm": 400.0,
+      "temp_c": 25.0,
+      "press_kpa": 101.325
+    },
+    "blank_source": "none"
+  },
+  "co2_offsets_by_port": {},
+  "co2_offsets": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

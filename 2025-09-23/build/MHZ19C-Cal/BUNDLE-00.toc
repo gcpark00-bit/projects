@@ -1,0 +1,4 @@
+([('MHZ19C-Cal',
+   '/Users/mac/VScoder/Project/CO2 '
+   'sensor/mac_vscode_co2_logger_full/dist/MHZ19C-Cal',
+   'EXECUTABLE')],)

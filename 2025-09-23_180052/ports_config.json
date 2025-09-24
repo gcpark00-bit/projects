@@ -1,0 +1,75 @@
+{
+  "co2_ports": [
+    "/dev/cu.SLAB_USBtoUART",
+    "/dev/cu.SLAB_USBtoUART5",
+    "/dev/cu.SLAB_USBtoUART7",
+    "/dev/cu.SLAB_USBtoUART9"
+  ],
+  "interval": 1.0,
+  "interval_jitter": 0.2,
+  "median_window": 5,
+  "debug_raw": false,
+  "hysteresis_ppm": 5.0,
+  "min_dup_interval": 0.8,
+  "debug_logfile": "debug_raw.log",
+  "clear_offsets_on_start": true,
+  "test_setup": {
+    "composition": {
+      "P(3-HP)": 60.869565217391305,
+      "PBAT": 17.391304347826086,
+      "Inorganic": 4.3478260869565215,
+      "Biochar": 4.3478260869565215,
+      "Starch": 8.695652173913043,
+      "기타": 4.3478260869565215
+    },
+    "composition_input": {
+      "P(3-HP)": 70.0,
+      "PBAT": 20.0,
+      "Inorganic": 5.0,
+      "Biochar": 5.0,
+      "Starch": 10.0,
+      "기타": 5.0
+    },
+    "mass_g": 1.0,
+    "env": "soil",
+    "carbon_fraction": {
+      "P(3-HP)": 50.0,
+      "PBAT": 62.0,
+      "Inorganic": 0.0,
+      "Biochar": 80.0,
+      "Starch": 44.0,
+      "기타": 0.0
+    },
+    "co2_accounting": {
+      "mode": "closed",
+      "vol_or_flow": 10.0,
+      "baseline_ppm": 400.0,
+      "temp_c": 25.0,
+      "press_kpa": 101.325
+    },
+    "blank_source": "co2_3"
+  },
+  "co2_offsets_by_port": {},
+  "co2_offsets": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "co2_roles_by_port": {
+    "/dev/cu.SLAB_USBtoUART": "sample",
+    "/dev/cu.SLAB_USBtoUART5": "sample",
+    "/dev/cu.SLAB_USBtoUART7": "blank",
+    "/dev/cu.SLAB_USBtoUART9": "compare"
+  },
+  "co2_roles": [
+    "sample",
+    "sample",
+    "blank",
+    "compare",
+    "sample",
+    "sample"
+  ]
+}
